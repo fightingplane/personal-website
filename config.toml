@@ -11,11 +11,15 @@ theme = "PaperMod"
   profilePicture = "images/avatar.jpg"
   
   # Social media links
-  socialIcons = [
-    { name = "github", url = "https://github.com/fightingplane" },
-    { name = "google", url = "https://google.com" },
-    { name = "facebook", url = "https://facebook.com" }
-  ]
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/fightingplane"
+  [[params.socialIcons]]
+    name = "google"
+    url = "https://google.com"
+  [[params.socialIcons]]
+    name = "facebook"
+    url = "https://facebook.com"
   
   # Features
   enableSocialShare = true
@@ -24,12 +28,12 @@ theme = "PaperMod"
   
   # SEO
   assets = ""
-  label = {
-    text = "Home",
-    icon = "/icons/home.svg",
-    iconHeight = 35,
-    iconWidth = 35
-  }
+
+[params.label]
+  text = "Home"
+  icon = "/icons/home.svg"
+  iconHeight = 35
+  iconWidth = 35
 
 [menu]
   [[menu.main]]
