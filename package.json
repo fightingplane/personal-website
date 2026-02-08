@@ -10,5 +10,8 @@
   "scripts": {
     "build": "hugo --minify",
     "dev": "hugo server -D"
+  },
+  "devDependencies": {
+    "@netlify/plugin-hugo-cache": "^1.0.0"
   }
 }
