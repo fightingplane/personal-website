@@ -1,0 +1,10 @@
+[build]
+  command = "hugo --minify"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.122.2"
+  NODE_VERSION = "18"
+
+[[plugins]]
+  package = "@netlify/plugin-hugo-cache"
