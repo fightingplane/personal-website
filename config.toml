@@ -1,0 +1,62 @@
+baseURL = "https://yourdomain.com/"
+languageCode = "en-us"
+title = "Rocky's Personal Website"
+theme = "PaperMod"
+
+[params]
+  env = "production"
+  title = "Rocky's Personal Website"
+  description = "Articles, Videos, and More"
+  author = "Rocky Wang"
+  profilePicture = "images/avatar.jpg"
+  
+  # Social media links
+  socialIcons = [
+    { name = "github", url = "https://github.com/fightingplane" },
+    { name = "google", url = "https://google.com" },
+    { name = "facebook", url = "https://facebook.com" }
+  ]
+  
+  # Features
+  enableSocialShare = true
+  enableComments = false
+  disableHLJS = false
+  
+  # SEO
+  assets = ""
+  label = {
+    text = "Home",
+    icon = "/icons/home.svg",
+    iconHeight = 35,
+    iconWidth = 35
+  }
+
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    name = "Videos"
+    url = "/videos/"
+    weight = 20
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 30
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
