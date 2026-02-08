@@ -1,0 +1,14 @@
+{
+  "name": "personal-website",
+  "description": "Rocky's personal website with articles, videos, and social media integration",
+  "version": "1.0.0",
+  "author": "Rocky Wang <juster.wang@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "18.x"
+  },
+  "scripts": {
+    "build": "hugo --minify",
+    "dev": "hugo server -D"
+  }
+}
