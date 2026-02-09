@@ -12,6 +12,9 @@ theme = "PaperMod"
   # Avatar/Logo configuration for PaperMod
   siteLogo = "/images/avatar.jpg"
   
+  # Custom CSS for avatar styling
+  customCSS = ["css/avatar.css"]
+  
   # Social media links
   [[params.socialIcons]]
     name = "github"
