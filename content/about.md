@@ -1,24 +1,18 @@
 ---
 title: "About"
-date: 2026-02-09T18:30:00+08:00
+date: 2026-02-09T18:00:00+08:00
 draft: false
 ---
 
 # About Me
 
-Hi! I'm **Rocky Wang**, a software architect passionate about technology and sharing knowledge.
+Hi! I'm Rocky Wang, a software architect passionate about technology and sharing knowledge.
 
-![Rocky Wang Profile](/images/rocky.jpg)
+![Rocky Wang](/images/avatar.jpg)
 
-## Connect With Me
+## Connect with me
 
-- 🐙 **[GitHub](https://github.com/fightingplane)** - Check out my projects and contributions
-- 📘 **[Facebook](https://www.facebook.com/wangxiaoyuan1987)** - Connect with me on Facebook
+- **GitHub**: [fightingplane](https://github.com/fightingplane)
+- **Facebook**: [wangxiaoyuan1987](https://www.facebook.com/wangxiaoyuan1987)
 
-## What You'll Find Here
-
-- **Articles** on software architecture, development, and technology
-- **Video content** covering various technical topics  
-- **Project showcases** from my GitHub repositories
-
-Feel free to explore my posts and videos, and don't hesitate to reach out through the social links above!
+Welcome to my personal website where I share articles, videos, and insights about software development and technology!
