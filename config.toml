@@ -8,9 +8,9 @@ theme = "PaperMod"
   title = "Rocky's Personal Website"
   description = "Articles, Videos, and More"
   author = "Rocky Wang"
-  profilePicture = "/images/avatar.jpg"
-  # Custom CSS
-  customCSS = ["/css/custom.css"]
+  
+  # Avatar/Logo configuration for PaperMod
+  siteLogo = "/images/avatar.jpg"
   
   # Social media links
   [[params.socialIcons]]
@@ -24,12 +24,6 @@ theme = "PaperMod"
   enableSocialShare = true
   enableComments = false
   disableHLJS = false
-
-[params.label]
-  text = "Home"
-  icon = "/icons/home.svg"
-  iconHeight = 35
-  iconWidth = 35
 
 [menu]
   [[menu.main]]
