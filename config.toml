@@ -9,6 +9,8 @@ theme = "PaperMod"
   description = "Articles, Videos, and More"
   author = "Rocky Wang"
   profilePicture = "/images/avatar.jpg"
+  # Custom CSS
+  customCSS = ["css/custom.css"]
   
   # Social media links
   [[params.socialIcons]]
@@ -22,9 +24,6 @@ theme = "PaperMod"
   enableSocialShare = true
   enableComments = false
   disableHLJS = false
-  
-  # SEO
-  assets = ""
 
 [params.label]
   text = "Home"
