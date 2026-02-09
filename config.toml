@@ -1,4 +1,4 @@
-baseURL = "https://yourdomain.com/"
+baseURL = "https://blog.wangxiaoyuan.top/"
 languageCode = "en-us"
 title = "Rocky's Personal Website"
 theme = "PaperMod"
@@ -15,11 +15,8 @@ theme = "PaperMod"
     name = "github"
     url = "https://github.com/fightingplane"
   [[params.socialIcons]]
-    name = "google"
-    url = "https://google.com"
-  [[params.socialIcons]]
     name = "facebook"
-    url = "https://facebook.com"
+    url = "https://www.facebook.com/wangxiaoyuan1987"
   
   # Features
   enableSocialShare = true
