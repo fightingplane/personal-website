@@ -27,8 +27,47 @@ I wanted full control over my content without relying on commercial platforms li
 
 ## Site Structure
 
-The final architecture consists of several key components:
+The final architecture consists of several key components. Let's see the deployment architecture diagram.
 
+## Deployment Architecture Diagram
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    Cloudflare CDN/SSL                       │
+│  ┌─────────────────────────────────────────────────────┐    │
+│  │                DNS: blog.wangxiaoyuan.top           │    │
+│  └─────────────────────────────────────────────────────┘    │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                              ▼ HTTPS (Port 443)
+┌─────────────────────────────────────────────────────────────┐
+│                    Your Server (VPS)                        │
+│                                                             │
+│  ┌─────────────────┐     ┌─────────────────────────────┐    │
+│  │   Nginx Proxy   │◄───►│    Docker Network           │    │
+│  │  (Ports 80/443) │     │  personal-website-network   │    │
+│  └─────────────────┘     └─────────────────────────────┘    │
+│            ▲                           │                    │
+│            │ HTTP                      │ Internal HTTP      │
+│            │                           ▼                    │
+│     ┌─────────────────┐     ┌─────────────────────────────┐ │
+│     │   Self-signed   │     │    Hugo Static Site         │ │
+│     │    Certificates │     │    Container                │ │
+│     └─────────────────┘     │    (Port 8081)              │ │
+│                             │                             │ │
+│                             │  • Hugo v0.146.0            │ │
+│                             │  • PaperMod Theme           │ │
+│                             │  • Static HTML/CSS/JS       │ │
+│                             └─────────────────────────────┘ │
+└─────────────────────────────────────────────────────────────┘
+
+Key Components:
+• Cloudflare: Handles DNS, SSL termination, and CDN caching
+• Nginx: Reverse proxy that routes traffic to Hugo container
+• Docker Network: Secure internal communication between containers  
+• Hugo Container: Serves your static website files
+• GitHub Repository: Version control for all site files and configuration
+```
 ### Hugo + PaperMod Theme
 - **Static site generator**: Hugo (v0.146.0)
 - **Theme**: PaperMod - clean, responsive, and feature-rich
@@ -51,46 +90,6 @@ The final architecture consists of several key components:
 - **Profile picture**: Rounded avatar in top-left corner
 - **Social media**: Direct links to GitHub and Facebook
 - **Responsive design**: Works on all devices
-
-## Deployment Architecture Diagram
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    Cloudflare CDN/SSL                       │
-│  ┌─────────────────────────────────────────────────────┐  │
-│  │                DNS: blog.wangxiaoyuan.top           │  │
-│  └─────────────────────────────────────────────────────┘  │
-└─────────────────────────────────────────────────────────────┘
-                              │
-                              ▼ HTTPS (Port 443)
-┌─────────────────────────────────────────────────────────────┐
-│                    Your Server (VPS)                        │
-│                                                             │
-│  ┌─────────────────┐     ┌─────────────────────────────┐   │
-│  │   Nginx Proxy   │◄───►│    Docker Network           │   │
-│  │  (Ports 80/443) │     │  personal-website-network   │   │
-│  └─────────────────┘     └─────────────────────────────┘   │
-│            ▲                           │                    │
-│            │ HTTP                      │ Internal HTTP      │
-│            │                           ▼                    │
-│     ┌─────────────────┐     ┌─────────────────────────────┐│
-│     │   Self-signed   │     │    Hugo Static Site         ││
-│     │    Certificates │     │    Container                ││
-│     └─────────────────┘     │    (Port 8081)              ││
-│                             │                             ││
-│                             │  • Hugo v0.146.0           ││
-│                             │  • PaperMod Theme          ││
-│                             │  • Static HTML/CSS/JS      ││
-│                             └─────────────────────────────┘│
-└─────────────────────────────────────────────────────────────┘
-
-Key Components:
-• Cloudflare: Handles DNS, SSL termination, and CDN caching
-• Nginx: Reverse proxy that routes traffic to Hugo container
-• Docker Network: Secure internal communication between containers  
-• Hugo Container: Serves your static website files
-• GitHub Repository: Version control for all site files and configuration
-```
 
 ## Step-by-Step Process
 
