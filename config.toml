@@ -8,7 +8,7 @@ theme = "PaperMod"
   title = "Rocky's Personal Website"
   description = "Articles, Videos, and More"
   author = "Rocky Wang"
-  profilePicture = "images/avatar.jpg"
+  profilePicture = "/images/rocky.jpg"
   
   # Social media links
   [[params.socialIcons]]
