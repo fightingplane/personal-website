@@ -1,0 +1,39 @@
+/* Custom CSS for profile picture styling */
+
+/* Make profile picture round */
+.profile img {
+    border-radius: 50% !important;
+    width: 60px !important;
+    height: 60px !important;
+    object-fit: cover !important;
+}
+
+/* Position profile picture in top-left corner */
+.profile {
+    position: absolute !important;
+    top: 20px !important;
+    left: 20px !important;
+    z-index: 1000 !important;
+}
+
+/* Adjust header to not overlap with profile picture */
+.navbar {
+    padding-left: 80px !important;
+}
+
+/* Ensure mobile responsiveness */
+@media (max-width: 768px) {
+    .profile {
+        top: 10px !important;
+        left: 10px !important;
+    }
+    
+    .profile img {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    
+    .navbar {
+        padding-left: 60px !important;
+    }
+}
