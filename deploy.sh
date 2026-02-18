@@ -20,7 +20,7 @@ docker build -t personal-website .
 
 # Run the new container
 echo "🐳 Starting new container on port 8081..."
-docker run -d --name personal-website -p 8081:80 personal-website
+docker run -d --name personal-website -p 8081:8081 personal-website
 
 echo "✅ Deployment complete!"
 echo "🌐 Your site is available at: http://localhost:8081"
