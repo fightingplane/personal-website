@@ -3,7 +3,7 @@ title: "Welcome to My Personal Website"
 date: 2026-02-08T17:30:00+08:00
 draft: false
 author: "Rocky Wang"
-description: "A place for articles, videos, and sharing knowledge"
+description: "Welcome to Rocky's personal website! Explore technical articles, video tutorials, and insights on software development, Docker, Hugo, and OpenClaw AI-assisted development."
 tags: ["welcome", "personal", "website"]
 ---
 
