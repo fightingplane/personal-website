@@ -9,11 +9,20 @@ theme = "PaperMod"
   description = "Articles, Videos, and More"
   author = "Rocky Wang"
   
-  # Avatar/Logo configuration for PaperMod
-  siteLogo = "/images/avatar.jpg"
+  # Profile Mode configuration for homepage avatar
+  [params.profileMode]
+    enabled = true
+    imageUrl = "/images/avatar.jpg"
+    imageTitle = "Rocky Wang"
+    imageWidth = 150
+    imageHeight = 150
+    title = "Rocky Wang"
+    subtitle = "Software Engineer & Content Creator"
   
-  # Custom CSS for avatar styling
-  customCSS = ["css/avatar.css"]
+  # Header logo configuration
+  [params.label]
+    icon = "/images/avatar.jpg"
+    iconHeight = 30
   
   # Social media links
   [[params.socialIcons]]
