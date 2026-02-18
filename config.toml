@@ -1,11 +1,11 @@
 baseURL = "https://blog.wangxiaoyuan.top/"
 languageCode = "en-us"
-title = "Rocky's Personal Website"
+title = "Rocky's Website"
 theme = "PaperMod"
 
 [params]
   env = "production"
-  title = "Rocky's Personal Website"
+  title = "Rocky's Website"
   description = "Articles, Videos, and More"
   author = "Rocky Wang"
   
