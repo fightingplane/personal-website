@@ -1,12 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Welcome to Rocky's Personal Website on Rocky's Personal Website</title><link>https://blog.wangxiaoyuan.top/</link><description>Recent content in Welcome to Rocky's Personal Website on Rocky's Personal Website</description><generator>Hugo -- 0.146.0</generator><language>en-us</language><lastBuildDate>Mon, 09 Feb 2026 19:21:00 +0800</lastBuildDate><atom:link href="https://blog.wangxiaoyuan.top/index.xml" rel="self" type="application/rss+xml"/><item><title>Set up my personal site with OpenClaw</title><link>https://blog.wangxiaoyuan.top/posts/set-up-my-personal-site-with-openclaw/</link><pubDate>Mon, 09 Feb 2026 19:21:00 +0800</pubDate><guid>https://blog.wangxiaoyuan.top/posts/set-up-my-personal-site-with-openclaw/</guid><description>&lt;h1 id="set-up-my-personal-site-with-openclaw">Set up my personal site with OpenClaw&lt;/h1>
-&lt;p>Setting up a personal website has always been on my to-do list, but the technical complexity often held me back. Thanks to &lt;strong>OpenClaw&lt;/strong>, an AI assistant that can execute commands and manage infrastructure, I was able to build and deploy a professional personal website in just a few hours!&lt;/p>
-&lt;h2 id="purpose">Purpose&lt;/h2>
-&lt;p>My goal was simple: create a self-hosted personal website where I can share:&lt;/p></description></item><item><title>About</title><link>https://blog.wangxiaoyuan.top/about/</link><pubDate>Mon, 09 Feb 2026 18:00:00 +0800</pubDate><guid>https://blog.wangxiaoyuan.top/about/</guid><description>&lt;h1 id="about-me">About Me&lt;/h1>
-&lt;p>Hi! I&amp;rsquo;m Rocky Wang, a software architect passionate about technology and sharing knowledge.&lt;/p>
-&lt;p>&lt;img alt="Rocky Wang" loading="lazy" src="https://blog.wangxiaoyuan.top/images/avatar.jpg">&lt;/p>
-&lt;h2 id="connect-with-me">Connect with me&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>GitHub&lt;/strong>: &lt;a href="https://github.com/fightingplane">fightingplane&lt;/a>&lt;/li>
-&lt;li>&lt;strong>Facebook&lt;/strong>: &lt;a href="https://www.facebook.com/wangxiaoyuan1987">wangxiaoyuan1987&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;p>Welcome to my personal website where I share articles, videos, and insights about software development and technology!&lt;/p></description></item><item><title>Welcome to My Personal Website</title><link>https://blog.wangxiaoyuan.top/posts/welcome/</link><pubDate>Sun, 08 Feb 2026 17:30:00 +0800</pubDate><guid>https://blog.wangxiaoyuan.top/posts/welcome/</guid><description>A place for articles, videos, and sharing knowledge</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Welcome to Rocky&#39;s Personal Website on Rocky&#39;s Website</title>
+    <link>https://blog.wangxiaoyuan.top/</link>
+    <description>Recent content in Welcome to Rocky&#39;s Personal Website on Rocky&#39;s Website</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Feb 2026 19:21:00 +0800</lastBuildDate>
+    <atom:link href="https://blog.wangxiaoyuan.top/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Set up my personal site with OpenClaw</title>
+      <link>https://blog.wangxiaoyuan.top/posts/set-up-my-personal-site-with-openclaw/</link>
+      <pubDate>Mon, 09 Feb 2026 19:21:00 +0800</pubDate>
+      <guid>https://blog.wangxiaoyuan.top/posts/set-up-my-personal-site-with-openclaw/</guid>
+      <description>Learn how to build and deploy a professional self-hosted personal website using OpenClaw, Hugo, Docker, and Cloudflare. Complete step-by-step tutorial with architecture diagram.</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://blog.wangxiaoyuan.top/about/</link>
+      <pubDate>Mon, 09 Feb 2026 18:00:00 +0800</pubDate>
+      <guid>https://blog.wangxiaoyuan.top/about/</guid>
+      <description>&lt;h1 id=&#34;about-me&#34;&gt;About Me&lt;/h1&gt;
+&lt;p&gt;Hi! I&amp;rsquo;m Rocky Wang, a software architect passionate about technology and sharing knowledge.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Rocky Wang&#34; loading=&#34;lazy&#34; src=&#34;https://blog.wangxiaoyuan.top/images/avatar.jpg&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;connect-with-me&#34;&gt;Connect with me&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&#34;https://github.com/fightingplane&#34;&gt;fightingplane&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Facebook&lt;/strong&gt;: &lt;a href=&#34;https://www.facebook.com/wangxiaoyuan1987&#34;&gt;wangxiaoyuan1987&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Welcome to my personal website where I share articles, videos, and insights about software development and technology!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Welcome to My Personal Website</title>
+      <link>https://blog.wangxiaoyuan.top/posts/welcome/</link>
+      <pubDate>Sun, 08 Feb 2026 17:30:00 +0800</pubDate>
+      <guid>https://blog.wangxiaoyuan.top/posts/welcome/</guid>
+      <description>Welcome to Rocky&amp;#39;s personal website! Explore technical articles, video tutorials, and insights on software development, Docker, Hugo, and OpenClaw AI-assisted development.</description>
+    </item>
+  </channel>
+</rss>
