@@ -47,6 +47,10 @@ theme = "PaperMod"
     url = "/videos/"
     weight = 20
   [[menu.main]]
+    name = "Booking"
+    url = "/booking/"
+    weight = 25
+  [[menu.main]]
     name = "About"
     url = "/about/"
     weight = 30
