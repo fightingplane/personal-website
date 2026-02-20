@@ -2,114 +2,128 @@
 title: "Let OpenClaw Understand My Voice Instructions"
 date: 2026-02-20T10:40:00+08:00
 draft: false
-tags: ["技术", "语音识别", "Whisper", "AI", "个人网站"]
-categories: ["技术分享"]
+tags: ["Tech", "Speech Recognition", "Whisper", "AI", "Personal Website"]
+categories: ["Tech Sharing"]
 ---
 
-## 引言
+## Introduction
 
-在当今的数字时代，语音交互已经成为用户体验的重要组成部分。作为个人网站的维护者，我一直在寻找能够提升网站互动性的方法。最近，我成功在个人网站的后台系统中集成了 OpenAI 的 Whisper 本地语音识别模型，实现了完全离线的语音转文字功能。
+Voice interaction has become a key part of modern user experience. As someone who maintains a personal website, I've always been looking for ways to make it more interactive. Recently, I integrated OpenAI's Whisper speech recognition model locally into my website's backend system, enabling fully offline speech-to-text capabilities.
 
-## 为什么选择本地 Whisper？
+## Why Local Whisper?
 
-### 隐私保护
-- **完全离线处理**：语音数据不会上传到任何云端服务
-- **数据安全**：敏感信息不会被第三方收集或存储
-- **自主控制**：完全掌控整个语音识别流程
+### Privacy
 
-### 成本效益
-- **一次性部署**：无需按使用量付费
-- **无 API 限制**：不受调用频率或配额限制
-- **长期稳定**：不依赖第三方服务的可用性
+- **Fully offline processing**: Voice data never leaves the server
+- **Data security**: No sensitive information collected or stored by third parties
+- **Full control**: Complete ownership of the entire speech recognition pipeline
 
-### 技术优势
-- **高准确率**：Whisper 在多种语言上都表现出色
-- **多语言支持**：自动检测并识别 99 种语言
-- **开源免费**：基于 MIT 许可证，可自由使用和修改
+### Cost Efficiency
 
-## 技术实现步骤
+- **One-time deployment**: No per-usage billing
+- **No API limits**: No rate limits or quota restrictions
+- **Long-term stability**: No dependency on third-party service availability
 
-### 1. 环境准备
-首先需要升级 Python 版本，因为 Whisper 要求 Python 3.8+：
+### Technical Advantages
+
+- **High accuracy**: Whisper performs well across many languages
+- **Multilingual support**: Automatically detects and transcribes 99 languages
+- **Open source**: MIT-licensed, free to use and modify
+
+## Implementation Steps
+
+### 1. Environment Setup
+
+Whisper requires Python 3.8+, so the first step is to make sure you have a compatible version:
+
 ```bash
-# 使用 Homebrew 安装 Python 3.11
+# Install Python 3.11 via Homebrew
 brew install python@3.11
 ```
 
-### 2. 安装 Whisper
-通过 pip 安装 OpenAI Whisper 及其依赖：
+### 2. Install Whisper
+
+Install OpenAI Whisper and its dependencies via pip:
+
 ```bash
-# 安装 Whisper
+# Install Whisper
 pip install openai-whisper torch
 ```
 
-### 3. 基本使用
-Whisper 提供了简单的命令行接口：
+### 3. Basic Usage
+
+Whisper provides a straightforward CLI:
+
 ```bash
-# 基本转录
+# Basic transcription
 whisper audio.mp3 --model medium
 
-# 指定语言（中文）
+# Specify language (Chinese)
 whisper audio.mp3 --model small --language zh
 
-# 输出格式选择
+# Choose output formats
 whisper audio.mp3 --output_format txt,srt,vtt
 ```
 
-### 4. 模型选择指南
-- **tiny** (39MB)：最快，适合实时应用
-- **base** (74MB)：平衡速度和准确率
-- **small** (244MB)：推荐用于中文识别
-- **medium** (769MB)：高准确率，适合重要场景
-- **large** (1.5GB)：最高准确率，支持所有语言
+### 4. Model Selection Guide
 
-## 实际应用效果
+- **tiny** (39MB): Fastest, suitable for real-time applications
+- **base** (74MB): Balanced speed and accuracy
+- **small** (244MB): Recommended for Chinese recognition
+- **medium** (769MB): High accuracy, good for important use cases
+- **large** (1.5GB): Highest accuracy, supports all languages
 
-在我的测试中，Whisper 成功准确识别了中文语音内容：
+## Results in Practice
 
-> **原始语音**："哈囉阿福，驗證一下語音是否正常工作"
-> 
-> **转录结果**："哈囉阿福 驗證一下語音是否正常工作"
+In my tests, Whisper accurately transcribed Chinese voice input:
 
-识别准确率达到 100%，且能自动检测语言为中文。
+> **Original speech**: "哈囉阿福，驗證一下語音是否正常工作"
+>
+> **Transcription**: "哈囉阿福 驗證一下語音是否正常工作"
 
-## 集成到个人工作流
+100% accuracy, with automatic language detection identifying it as Chinese.
 
-现在，我可以在 Telegram 中直接发送语音消息，后台系统会自动：
-1. 接收语音文件
-2. 使用本地 Whisper 进行转录
-3. 返回文字结果供进一步处理
+## Integration into My Workflow
 
-这种集成不仅提升了工作效率，还为未来的语音交互功能奠定了基础。
+Now I can send voice messages directly in Telegram, and the backend automatically:
 
-## 性能考虑
+1. Receives the voice file
+2. Transcribes it using local Whisper
+3. Returns the text for further processing
 
-### 硬件要求
-- **内存**：至少 4GB RAM（推荐 8GB+）
-- **存储**：模型文件约 1.5GB（large 模型）
-- **CPU**：现代多核处理器即可，无需 GPU
+This integration not only improves efficiency but also lays the groundwork for future voice-based features.
 
-### 处理速度
-在我的服务器上（4 核 CPU，8GB RAM）：
-- 4.6 秒音频 → 约 2 秒处理时间
-- 内存占用峰值约 2GB
+## Performance Considerations
 
-## 未来展望
+### Hardware Requirements
 
-这个本地语音识别系统的成功部署为更多创新应用打开了大门：
+- **RAM**: At least 4GB (8GB+ recommended)
+- **Storage**: ~1.5GB for the large model
+- **CPU**: Any modern multi-core processor works fine — no GPU required
 
-1. **网站访客语音留言**：允许用户通过语音提交反馈
-2. **语音搜索功能**：为网站内容提供语音搜索能力  
-3. **自动化字幕生成**：为视频内容自动生成字幕
-4. **多语言实时翻译**：结合翻译 API 实现语音翻译
+### Processing Speed
 
-## 结语
+On my server (4-core CPU, 8GB RAM):
 
-通过集成本地 Whisper 语音识别，我不仅获得了强大的语音转文字能力，还确保了用户数据的隐私和安全。这种技术方案展示了如何在保持简单性的同时，为个人项目添加前沿的 AI 功能。
+- 4.6 seconds of audio → ~2 seconds processing time
+- Peak memory usage ~2GB
 
-对于任何希望在自己的项目中实现语音识别的开发者，我强烈推荐尝试本地 Whisper 方案。它既强大又灵活，而且完全免费！
+## What's Next
+
+Successfully deploying this local speech recognition system opens the door to more possibilities:
+
+1. **Voice guestbook**: Allow visitors to leave voice feedback on the site
+2. **Voice search**: Enable voice-based content search
+3. **Auto-generated subtitles**: Automatically caption video content
+4. **Real-time multilingual translation**: Combine with translation APIs for voice translation
+
+## Conclusion
+
+By integrating local Whisper speech recognition, I gained powerful speech-to-text capabilities while keeping user data private and secure. This approach shows how you can add cutting-edge AI features to personal projects without sacrificing simplicity.
+
+If you're looking to add speech recognition to your own project, I highly recommend giving local Whisper a try. It's powerful, flexible, and completely free.
 
 ---
 
-**技术栈**：Python 3.11 + OpenAI Whisper + Docker + Hugo  
-**部署环境**：Linux 服务器 + Telegram Bot 集成
+**Tech Stack**: Python 3.11 + OpenAI Whisper + Docker + Hugo
+**Deployment**: Linux Server + Telegram Bot Integration
