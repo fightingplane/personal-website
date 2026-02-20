@@ -3,6 +3,7 @@ title: "Set up my personal site with OpenClaw"
 date: 2026-02-09T19:21:00+08:00
 draft: false
 author: "Rocky Wang"
+description: "Learn how to build and deploy a professional self-hosted personal website using OpenClaw, Hugo, Docker, and Cloudflare. Complete step-by-step tutorial with architecture diagram."
 tags: ["personal", "website", "hugo", "docker", "openclaw"]
 categories: ["tutorial", "web development"]
 ---
