@@ -34,7 +34,13 @@ theme = "PaperMod"
   [[params.socialIcons]]
     name = "email"
     url = "mailto:juster.wang@gmail.com"
+  [[params.socialIcons]]
+    name = "rss"
+    url = "https://blog.wangxiaoyuan.top/index.xml"
     
+  # RSS
+  ShowFullTextinRSS = true
+
   # Features
   enableSocialShare = true
   enableComments = false
