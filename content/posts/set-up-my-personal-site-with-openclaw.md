@@ -6,6 +6,28 @@ author: "Rocky Wang"
 description: "Learn how to build and deploy a professional self-hosted personal website using OpenClaw, Hugo, Docker, and Cloudflare. Complete step-by-step tutorial with architecture diagram."
 tags: ["personal", "website", "hugo", "docker", "openclaw"]
 categories: ["tutorial", "web development"]
+faq:
+  - question: "What tools do I need to build a personal website with Hugo?"
+    answer: "You need Hugo (static site generator), a theme like PaperMod, Docker for containerization, and a domain with Cloudflare for DNS and SSL."
+  - question: "How do I deploy a Hugo site with Docker?"
+    answer: "Create a multi-stage Dockerfile that builds the Hugo site in the first stage and serves it with Nginx in the second stage. Run the container on port 8081 behind an Nginx reverse proxy."
+  - question: "Can I use AI to help build my website?"
+    answer: "Yes. AI assistants like OpenClaw can execute commands, create files, configure Docker and Nginx, and manage deployments — reducing setup time from days to hours."
+howto:
+  - name: "Initial Setup"
+    text: "Generate a new Hugo site with PaperMod theme and configure config.toml with your baseURL."
+  - name: "Social Media Integration"
+    text: "Add your GitHub, Facebook, and other social profiles to the site configuration."
+  - name: "Docker Containerization"
+    text: "Create a multi-stage Dockerfile with Hugo builder and Nginx production stages."
+  - name: "Nginx Reverse Proxy"
+    text: "Configure Nginx to proxy requests to the Hugo container with SSL support."
+  - name: "Domain and Cloudflare Setup"
+    text: "Point DNS to your server and configure Cloudflare SSL/TLS to Full mode."
+  - name: "Personal Branding"
+    text: "Add your profile picture, custom CSS, and responsive design touches."
+  - name: "Continuous Deployment"
+    text: "Set up GitHub repository and rebuild/deploy scripts for content updates."
 ---
 
 # Set up my personal site with OpenClaw

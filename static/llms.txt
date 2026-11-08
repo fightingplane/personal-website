@@ -1,0 +1,35 @@
+# Rocky's Website
+
+> Personal website of Rocky Wang — Software Engineer & Content Creator
+> specializing in software architecture, AI, and digital dentistry.
+
+## About the Author
+
+Rocky Wang is a software engineer and content creator focused on:
+- Software architecture and full-stack development
+- AI-assisted development workflows (OpenClaw, Whisper, LLMs)
+- Digital dentistry technology (CAD/CAM, 3D printing, AI design)
+- Self-hosted infrastructure (Docker, Hugo, Cloudflare)
+
+## Content Sections
+
+- [Posts](https://blog.wangxiaoyuan.top/posts/): Technical articles and tutorials
+- [Videos](https://blog.wangxiaoyuan.top/videos/): Video demonstrations and webinars
+- [About](https://blog.wangxiaoyuan.top/about/): Author bio and social links
+- [Booking](https://blog.wangxiaoyuan.top/booking/): Schedule a meeting
+
+## Key Articles
+
+- [Set up my personal site with OpenClaw](https://blog.wangxiaoyuan.top/posts/set-up-my-personal-site-with-openclaw/): Step-by-step tutorial for building a self-hosted Hugo site with Docker and Cloudflare
+- [Monitor Digital Dentistry with OpenClaw](https://blog.wangxiaoyuan.top/posts/monitor-digital-dentistry-with-openclaw/): Building an AI-powered RSS monitoring system for dental industry news
+- [Let OpenClaw Understand My Voice Instructions](https://blog.wangxiaoyuan.top/posts/let-openclaw-understand-my-voice-instructions/): Integrating local Whisper speech recognition for offline voice-to-text
+- [Adding GEO to My Personal Website](https://blog.wangxiaoyuan.top/posts/adding-geo-to-my-personal-website/): Optimizing a Hugo site for AI search engines
+
+## Technical Stack
+
+Hugo (static site generator) + PaperMod theme + Docker + Nginx + Cloudflare Workers
+
+## Contact
+
+- GitHub: https://github.com/fightingplane
+- Email: juster.wang@gmail.com

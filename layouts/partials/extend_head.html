@@ -1,0 +1,68 @@
+{{- if .IsPage }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Rocky Wang",
+  "url": "{{ "/about/" | absURL }}",
+  "image": "{{ "/images/avatar.jpg" | absURL }}",
+  "jobTitle": "Software Engineer",
+  "sameAs": [
+    "https://github.com/fightingplane",
+    "https://www.facebook.com/wangxiaoyuan1987"
+  ],
+  "knowsAbout": [
+    "Software Architecture",
+    "Artificial Intelligence",
+    "Digital Dentistry",
+    "Hugo",
+    "Docker",
+    "Cloudflare"
+  ]
+}
+</script>
+{{- end }}
+
+{{- if .Params.faq }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{- range $i, $q := .Params.faq }}
+    {{- if $i }},{{ end }}
+    {
+      "@type": "Question",
+      "name": {{ $q.question | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ $q.answer | jsonify }}
+      }
+    }
+    {{- end }}
+  ]
+}
+</script>
+{{- end }}
+
+{{- if .Params.howto }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": {{ .Title | jsonify }},
+  "description": {{ .Description | jsonify }},
+  "step": [
+    {{- range $i, $s := .Params.howto }}
+    {{- if $i }},{{ end }}
+    {
+      "@type": "HowToStep",
+      "position": {{ add $i 1 }},
+      "name": {{ $s.name | jsonify }},
+      "text": {{ $s.text | jsonify }}
+    }
+    {{- end }}
+  ]
+}
+</script>
+{{- end }}

@@ -3,6 +3,7 @@ title: "AI-Powered Dental Design: Core Functions & Streamlined Workflow by SHINI
 date: 2025-02-09T00:00:00+08:00
 draft: false
 author: "Rocky Wang"
+description: "Watch how SHINING 3D's AI Design solutions streamline chairside and lab workflows with AI-assisted crown design, model design, and cloud-based scan data integration."
 tags: ["AI", "dental design", "SHINING 3D", "AI Crown", "digital dentistry"]
 categories: ["videos"]
 ---
