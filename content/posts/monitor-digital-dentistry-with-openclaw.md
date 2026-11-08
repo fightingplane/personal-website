@@ -2,6 +2,7 @@
 title: "Monitor Digital Dentistry with OpenClaw"
 date: 2026-02-20T23:25:00+08:00
 draft: false
+description: "Building an intelligent RSS monitoring system with OpenClaw that auto-tracks digital dentistry news, generates AI summaries, and delivers prioritized updates to Telegram."
 tags: ["OpenClaw", "Digital Dentistry", "RSS", "Automation", "AI", "Telegram"]
 categories: ["Technology", "Dental Technology"]
 ---

@@ -1,6 +1,6 @@
 ---
-title: "Welcome to Rocky's Personal Website"
-description: "Articles, Videos, and More"
+title: "Rocky's Website — Software Engineer & Content Creator"
+description: "Personal website of Rocky Wang. Technical articles, video tutorials, and insights on software architecture, AI, and digital dentistry."
 ---
 # Welcome to My Personal Website
 

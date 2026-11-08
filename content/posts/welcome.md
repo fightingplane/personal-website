@@ -19,7 +19,6 @@ Stay tuned for more content coming soon!
 
 ## Social Links
 - [GitHub](https://github.com/fightingplane)
-- [LinkedIn](#) (coming soon)
-- [Twitter](#) (coming soon)
+- [Facebook](https://www.facebook.com/wangxiaoyuan1987)
 
 Feel free to explore and subscribe for updates!

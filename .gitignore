@@ -1,1 +1,26 @@
+# Hugo build output
+public/
+resources/
+
+# Hugo build lock
+.hugo_build.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment variables
+.env
+.env.local
+
+# Node
+node_modules/
+
+# Claude / AI tooling
 .claude/settings.local.json

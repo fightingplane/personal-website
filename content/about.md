@@ -2,6 +2,7 @@
 title: "About"
 date: 2026-02-09T18:00:00+08:00
 draft: false
+description: "Learn more about Rocky Wang — software engineer, content creator, and technology enthusiast."
 ---
 
 # About Me

@@ -1,13 +1,16 @@
 baseURL = "https://blog.wangxiaoyuan.top/"
-languageCode = "en-us"
+locale = "en-us"
 title = "Rocky's Website"
 theme = "PaperMod"
 
 [params]
   env = "production"
   title = "Rocky's Website"
-  description = "Articles, Videos, and More"
+  description = "Rocky Wang — Software Engineer & Content Creator. Sharing technical articles, video tutorials, and insights on software architecture, AI, and digital dentistry."
   author = "Rocky Wang"
+  keywords = ["software engineer", "Rocky Wang", "digital dentistry", "AI", "software architecture", "Hugo", "Docker", "OpenClaw"]
+  images = ["/images/avatar.jpg"]
+  defaultTheme = "auto"
   
   # Profile Mode configuration for homepage avatar
   [params.profileMode]
@@ -40,6 +43,10 @@ theme = "PaperMod"
     
   # RSS
   ShowFullTextinRSS = true
+
+  # Social metadata for SEO
+  [params.social]
+    twitter = "RockyWangDev"
 
   # Features
   enableSocialShare = true

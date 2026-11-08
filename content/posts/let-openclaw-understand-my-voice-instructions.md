@@ -2,6 +2,7 @@
 title: "Let OpenClaw Understand My Voice Instructions"
 date: 2026-02-20T10:40:00+08:00
 draft: false
+description: "How I integrated OpenAI Whisper for fully offline speech-to-text, enabling voice interaction directly through Telegram with automatic language detection."
 tags: ["Tech", "Speech Recognition", "Whisper", "AI", "Personal Website"]
 categories: ["Tech Sharing"]
 ---
