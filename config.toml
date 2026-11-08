@@ -1,5 +1,5 @@
 baseURL = "https://blog.wangxiaoyuan.top/"
-locale = "en-us"
+languageCode = "en-us"
 title = "Rocky's Website"
 theme = "PaperMod"
 
